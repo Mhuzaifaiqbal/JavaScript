@@ -1,0 +1,46 @@
+Vehicle={ //base class
+    type:"Generic Vehicle",
+    speed:0,
+    fuel:100,
+    start(){
+        console.log("The vehicle has started");
+    },
+    stop(){
+        console.log("the vehicle has stopped");
+    },
+    info(){
+        console.log(`Type: ${this.type}, Speed: ${this.speed}, Fuel: ${this.fuel}`);
+    },
+    accelerate(amount){
+        this.speed=this.speed+amount;
+        console.log(`New speed: ${this.speed}`);
+    }
+}
+Vehicle.start();
+Vehicle.stop();
+Vehicle.info();
+
+
+Car=Object.create(Vehicle); //car object inheriting from vehicle object
+Car.type="Car"; //parent attribute modified
+Car.wheels="4";//new attribute created
+Car.honk=function(){ //new function created
+    console.log(`This ${this.type} is honking` );
+
+} 
+Car.start=function(){ //parent function overridden
+    console.log(`Car is roaring on the road at speed ${this.speed}`);
+}
+Car.accelerate=function(speed){
+    this.speed=this.speed+speed;
+    console.log(`New car speed is ${this.speed}`  )
+}
+
+Car.start();
+Car.honk();
+Car.accelerate(12);
+
+
+//similary we can create many instances of iobjects that inherit from the vehcile class or even the car class
+
+

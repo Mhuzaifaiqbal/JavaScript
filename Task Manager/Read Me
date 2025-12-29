@@ -1,1 +1,20 @@
+This is a simple **Task Management System** implemented in **JavaScript** using **Object-Oriented Programming (OOP)** concepts and **fundamental data structures (FDS)**. 
+The project focuses on managing tasks with priorities and demonstrates the use of **classes, encapsulation, and methods**.
 
+**Key Features:**
+
+* Create tasks with attributes like **ID, priority, description, status, due date, and creation date**.
+* Update task **details** and **status** safely using class methods.
+* Store tasks in a **Max-Heap** to efficiently access the **highest-priority task**.
+* Perform heap operations like **insert**, **extract max**, **increase key**, and **remove task**.
+* Sort and retrieve tasks based on priority, demonstrating **heap-based priority management**.
+
+**Learning Focus:**
+
+* Practicing **Object-Oriented Programming** principles such as **encapsulation**, **getter methods**, and **class interaction**.
+* Working with **basic data structures**, particularly **heaps**, to understand **priority queues**.
+* Understanding **task management logic** in real-world applications through simple code.
+
+**Purpose:**
+This project serves as a **hands-on exercise** for students or beginners to strengthen their grasp of **OOP concepts** and **data structure manipulation**, making it a perfect
+small-scale practice project for learning JavaScript class design and heap operations.
